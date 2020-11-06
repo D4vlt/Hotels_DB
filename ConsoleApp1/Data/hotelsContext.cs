@@ -27,7 +27,8 @@ namespace ConsoleApp1.Data
             if (!optionsBuilder.IsConfigured)
             {
 #warning To protect potentially sensitive information in your connection string, you should move it out of source code. See http://go.microsoft.com/fwlink/?LinkId=723263 for guidance on storing connection strings.
-                optionsBuilder.UseSqlite("Data Source=C:\\DB\\hotels.db");
+              //  optionsBuilder.UseSqlite("Data Source=C:\\DB\\hotels.db");
+                optionsBuilder.UseSqlServer("Data Source=(localdb)\\MSSQLLocalDB;Initial Catalog=Library_db");
             }
         }
 
